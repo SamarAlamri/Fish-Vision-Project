@@ -1,0 +1,12 @@
+numpy
+pandas
+opencv-python
+scikit-learn
+scikit-image
+matplotlib
+seaborn
+tensorflow
+torch
+torchvision
+flask 
+joblib
