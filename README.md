@@ -10,7 +10,7 @@ This project consolidates a massive array of computer vision experiments into a 
 ## ⚠️ IMPORTANT: Download Trained Models
 Due to GitHub's file size limits (maximum 100MB per file), the trained model files (weights) are hosted externally. 
 
-**👉 [CLICK HERE TO DOWNLOAD MODELS FROM GOOGLE DRIVE](PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE)**
+**👉 [CLICK HERE TO DOWNLOAD MODELS FROM GOOGLE DRIVE](https://drive.google.com/file/d/1kM4xmBG-goVZqKbcqQ2Md5cXojAAvBTh/view?usp=sharing)**
 
 **Instructions:**
 1. Download the `.zip` file from the link above.
