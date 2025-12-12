@@ -86,6 +86,25 @@ Clone the repository:
 git clone [https://github.com/SamarAlamri/Fish-Vision-Project.git](https://github.com/SamarAlamri/Fish-Vision-Project.git)
 cd Fish-Vision-Project
 ```
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+### 2. Setup Models
+Download the models from the Google Drive link at the top of this file.
+Move them into the Web_Application/saved_models/ directory.
+
+### 3. Run the Web Application
+Navigate to the folder and start the server:
+```bash
+cd Web_Application
+python app.py
+```
+Open your browser and visit: ``` http://127.0.0.1:5000 ```
+
+---
+
 📊 Results Summary
 ------------------
 
