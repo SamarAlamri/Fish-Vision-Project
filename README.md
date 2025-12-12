@@ -5,30 +5,72 @@
 **Department:** Computer Science  
 
 ## 📌 Project Overview
-This project consolidates advanced computer vision techniques to solve the problem of fish species analysis. It integrates a wide range of methodologies—from classical machine learning with handcrafted features to state-of-the-art Deep Learning models—into a unified framework.
+This project consolidates a massive array of computer vision experiments into a unified framework for fish species analysis. The system integrates contributions from all group members, covering **Classical Machine Learning**, **Deep Learning (CNNs)**, **Transfer Learning**, **Object Detection**, and **Instance Segmentation**.
 
-The system is designed to perform three core tasks:
-1.  **Image Classification:** Identifying fish species using both classical (HOG+ANN/SVM) and deep learning (CNNs, Transfer Learning) approaches.
-2.  **Object Detection & Segmentation:** Localizing fish in images and generating pixel-perfect segmentation masks.
-3.  **Decision-Level Fusion:** Implementing a Stacking Ensemble to combine the strengths of heterogeneous models for maximum accuracy.
+## ⚠️ IMPORTANT: Download Trained Models
+Due to GitHub's file size limits (maximum 100MB per file), the trained model files (weights) are hosted externally. 
 
-## 🚀 Key Features & Methodologies
+**👉 [CLICK HERE TO DOWNLOAD MODELS FROM GOOGLE DRIVE](PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE)**
+
+**Instructions:**
+1. Download the `.zip` file from the link above.
+2. Extract the contents.
+3. Place the `.h5`, `.pth`, and `.pt` files into the `Web_Application/models/` folder before running the program.
+
+---
+
+## 🚀 Key Features & Models Implemented
 
 ### 1. Classical Machine Learning
-* **Feature Extraction:** Histogram of Oriented Gradients (HOG), Local Binary Patterns (LBP).
-* **Classifiers:** Artificial Neural Networks (ANN), SVM, KNN.
+Feature extraction techniques combined with strong classifiers (**ANN, KNN, SVM**):
+* **Texture & Pattern:** LBP (Local Binary Patterns), GLCM (Gray-Level Co-occurrence Matrix).
+* **Shape & Geometry:** HOG (Histogram of Oriented Gradients), HuMoments.
+* **Keypoints:** ORB (Oriented FAST and Rotated BRIEF).
 
-### 2. Deep Learning Models
-* **Custom CNNs:** Designed from scratch, tested with regularization techniques like Dropout.
-* **Transfer Learning:** Fine-tuning pre-trained architectures like **MobileNetV2** for robust performance on limited data.
+### 2. Deep Learning (Custom Architectures)
+Four custom Convolutional Neural Networks designed from scratch:
+* **CNN Model 1 & 2:** Baseline architectures for feature learning.
+* **CNN Model 3 & 4:** Advanced variations with Dropout and Batch Normalization.
 
-### 3. Advanced Fusion Strategy
+### 3. Transfer Learning (Pre-trained Models)
+Fine-tuned state-of-the-art architectures for robust classification:
+* **MobileNetV2** (Optimized for speed).
+* **ResNet18** (Residual learning).
+* **InceptionV3** (Multi-scale processing).
+* **EfficientNet-B0** (Efficiency & Accuracy balance).
+
+### 4. Object Detection
+Real-time localization of fish species:
+* **YOLO Series:** YOLOv5, YOLOv8n, YOLOv11, and Custom trained versions.
+* **Transformer-based:** RT-DETR (Real-Time DEtection TRansformer).
+
+### 5. Image Segmentation
+Pixel-level mask generation for precise fish boundaries:
+* **Semantic/Instance Segmentation:** Mask R-CNN, U-Net, DeepLabV, FCN (Fully Convolutional Network).
+* **Modern Architectures:** YOLOv8-Seg, Custom SegNet.
+
+### 6. Decision-Level Fusion (The "Manager")
 * **Technique:** Stacked Generalization (Stacking).
-* **Mechanism:** A meta-learner (Logistic Regression) aggregates probability scores from the best classical (HOG+ANN) and deep learning models to improve final classification accuracy and robustness.
+* **Role:** Combines the predictions of the best-performing models (e.g., ANN-HOG + MobileNetV2 + Custom CNN) using a Logistic Regression meta-learner to achieve **100% Validation Accuracy**.
 
-### 4. Detection & Segmentation
-* **Models:** Implementation of architectures like YOLO / Mask R-CNN for precise object localization and segmentation.
+---
 
-### 5. Deployment
-* **Web Application:** A fully functional web interface allows users to upload images and visualize classification results in real-time.
+## 📂 Repository Structure
 
+```text
+Fish-Vision-Project/
+│
+├── 📂 Project_Report           # Full documentation (Methodology, Experiments, Results)
+│   └── Comprehensive_Computer_Vision_Report.pdf
+│
+├── 📂 Web_Application          # Source code for the deployment interface
+│   ├── app.py                  # Main application script
+│   ├── templates/              # HTML frontend
+│   └── saved_models/           # PLACE DOWNLOADED MODELS HERE
+│
+├── 📂 Notebooks                # Experimental Code
+│   ├── 📂 Final_Project_Fusion # The unified Fusion Model code
+│   └── 📂 Student_Assignments  # Individual contributions (Member 1, 2, 3...)
+│
+├── requirements.txt            # Python dependencies
+└── README.md                   # Project documentation
