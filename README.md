@@ -75,50 +75,32 @@ Fish-Vision-Project/
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Project documentation
 ```
-🛠️ How to Run the System
-Prerequisites
-Ensure you have Python 3.8+ installed.
+## 🛠️ How to Run the System
 
-1. Installation
+### Prerequisites
+Ensure you have **Python 3.8+** installed.
+
+### 1. Installation
 Clone the repository:
-
-Bash
-
+```bash
 git clone [https://github.com/SamarAlamri/Fish-Vision-Project.git](https://github.com/SamarAlamri/Fish-Vision-Project.git)
 cd Fish-Vision-Project
-Install dependencies:
-
-Bash
-
-pip install -r requirements.txt
-2. Setup Models
-Download the models from the Google Drive link at the top of this file.
-
-Move them into the Web_Application/saved_models/ directory.
-
-3. Run the Web Application
-Navigate to the folder and start the server:
-
-Bash
-
-cd Web_Application
-python app.py
-Open your browser and visit: http://127.0.0.1:5000
-
+```
 📊 Results Summary
-Best Classical Model: ANN + HOG features (>90% accuracy).
+------------------
 
-Best Deep Model: MobileNetV2 (~96% accuracy).
-
-Fusion Model: The Stacking Ensemble achieved 100% accuracy on the validation set.
+* **Best Classical Model:** ANN + HOG features (accuracy > 90%)
+* **Best Deep Learning Model:** MobileNetV2 (~96% accuracy)
+* **Fusion Model:** Decision-level stacking ensemble achieved **100% accuracy** on the validation set
 
 👥 Group Members
-[Member 1 Name] (ID: XXXXXX)
+----------------
 
-[Member 2 Name] (ID: XXXXXX)
+* **Member 1: Samar Mishal Alamri** 
+* **Member 2: Talah Rabea Faloudah** 
+* **Member 3: Jumanah Jamal Banabilah** 
+* **Member 4: Rana Ahmed Alzahrani** 
 
-[Member 3 Name] (ID: XXXXXX)
-
-[Member 4 Name] (ID: XXXXXX)
+----------------
 
 Developed for CPCS-432 Course Project.
