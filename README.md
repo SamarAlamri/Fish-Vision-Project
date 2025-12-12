@@ -27,7 +27,7 @@ Feature extraction techniques combined with strong classifiers (**ANN, KNN, SVM*
 * **Shape & Geometry:** HOG (Histogram of Oriented Gradients), HuMoments.
 * **Keypoints:** ORB (Oriented FAST and Rotated BRIEF).
 
-### 2. Deep Learning (Custom Architectures)
+### 2. Deep Learning 
 Four custom Convolutional Neural Networks designed from scratch:
 * **CNN Model 1 & 2:** Baseline architectures for feature learning.
 * **CNN Model 3 & 4:** Advanced variations with Dropout and Batch Normalization.
@@ -40,7 +40,7 @@ Fine-tuned state-of-the-art architectures for robust classification:
 * **EfficientNet-B0** (Efficiency & Accuracy balance).
 
 ### 4. Object Detection
-Real-time localization of fish species:
+Detects fish and draws a bounding box around them:
 * **YOLO Series:** YOLOv5, YOLOv8n, YOLOv11, and Custom trained versions.
 * **Transformer-based:** RT-DETR (Real-Time DEtection TRansformer).
 
@@ -74,3 +74,51 @@ Fish-Vision-Project/
 │
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Project documentation
+```
+🛠️ How to Run the System
+Prerequisites
+Ensure you have Python 3.8+ installed.
+
+1. Installation
+Clone the repository:
+
+Bash
+
+git clone [https://github.com/SamarAlamri/Fish-Vision-Project.git](https://github.com/SamarAlamri/Fish-Vision-Project.git)
+cd Fish-Vision-Project
+Install dependencies:
+
+Bash
+
+pip install -r requirements.txt
+2. Setup Models
+Download the models from the Google Drive link at the top of this file.
+
+Move them into the Web_Application/saved_models/ directory.
+
+3. Run the Web Application
+Navigate to the folder and start the server:
+
+Bash
+
+cd Web_Application
+python app.py
+Open your browser and visit: http://127.0.0.1:5000
+
+📊 Results Summary
+Best Classical Model: ANN + HOG features (>90% accuracy).
+
+Best Deep Model: MobileNetV2 (~96% accuracy).
+
+Fusion Model: The Stacking Ensemble achieved 100% accuracy on the validation set.
+
+👥 Group Members
+[Member 1 Name] (ID: XXXXXX)
+
+[Member 2 Name] (ID: XXXXXX)
+
+[Member 3 Name] (ID: XXXXXX)
+
+[Member 4 Name] (ID: XXXXXX)
+
+Developed for CPCS-432 Course Project.
