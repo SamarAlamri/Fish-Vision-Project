@@ -7,6 +7,15 @@
 ## 📌 Project Overview
 This project consolidates a massive array of computer vision experiments into a unified framework for fish species analysis. The system integrates contributions from all group members, covering **Classical Machine Learning**, **Deep Learning (CNNs)**, **Transfer Learning**, **Object Detection**, and **Instance Segmentation**.
 
+## 📊 Datasets Used
+The models were trained and evaluated on the following datasets:
+
+* **[A Large-Scale Fish Dataset]**: [Click here to view Dataset](https://www.kaggle.com/datasets/crowww/a-large-scale-fish-dataset)
+* **[Fish Recognition Ground-Truth Dataset]**: [Click here to view Dataset](https://homepages.inf.ed.ac.uk/rbf/fish4knowledge/GROUNDTRUTH/RECOG/)
+* **[Aquarium Dataset]**: [Click here to view Dataset](https://public.roboflow.com/object-detection/aquarium/2)
+
+> **Note:** The actual dataset images are not included in this repository to save space. Please download them from the links above if you wish to retrain the models.
+
 ## ⚠️ IMPORTANT: Download Trained Models
 Due to GitHub's file size limits (maximum 100MB per file), the trained model files (weights) are hosted externally. 
 
@@ -92,8 +101,8 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 ### 2. Setup Models
-Download the models from the Google Drive link at the top of this file.
-Move them into the Web_Application/saved_models/ directory.
+* Download the models from the Google Drive link at the top of this file.
+* Move them into the Web_Application/saved_models/ directory.
 
 ### 3. Run the Web Application
 Navigate to the folder and start the server:
