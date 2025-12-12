@@ -114,13 +114,6 @@ Open your browser and visit: ``` http://127.0.0.1:5000 ```
 
 ---
 
-📊 Results Summary
-------------------
-
-* **Best Classical Model:** ANN + HOG features (accuracy > 90%)
-* **Best Deep Learning Model:** MobileNetV2 (~96% accuracy)
-* **Fusion Model:** Decision-level stacking ensemble achieved **100% accuracy** on the validation set
-
 👥 Group Members
 ----------------
 
